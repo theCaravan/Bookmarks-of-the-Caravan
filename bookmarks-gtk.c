@@ -30,13 +30,15 @@ int main(int argc, char *argv[]) {
 	GtkWidget *quitbox;
 	//////////
 	
+	int framesDone = 0;
+	
 	// Creating Widgets //
 	GtkWidget *mainWindow;
 	GtkWidget *mainColumn;
 	GtkWidget *mainLabel;
 	
 	GtkWidget *mainRow;
-	GtkWidget *frame[FRAMES];
+	GtkWidget *frame[MAX_FRAMES];
 	GtkWidget *sectionBox;
 
 	gtk_init (&argc, &argv);	
@@ -66,10 +68,15 @@ int main(int argc, char *argv[]) {
 	// Creating mainRow box to fit the frames of each section //
 	mainRow = gtk_hbox_new (FALSE, 0);
 	
-	for (int currentFrame = 0; currentFrame < FRAMES; currentFrame++) {
+	
+	
+	for (int currentFrame = 0; currentFrame < MAX_FRAMES; currentFrame++) {
+		
 		
 		frame[currentFrame] = gtk_frame_new(frames_string[currentFrame]);
+		
 		gtk_frame_set_label_align(GTK_FRAME (frame[currentFrame]), frames_horizontalAlign, frames_verticalAlign);
+		
 		gtk_frame_set_shadow_type (GTK_FRAME (frame[currentFrame]), frames_shadowType);
 		
 		sectionBox = gtk_vbox_new (FALSE, 0);
@@ -79,6 +86,12 @@ int main(int argc, char *argv[]) {
 			if (bookmarks[currentBookmark][0] == NULL)
 				break;
 			
+			if (frames_string[currentFrame] == NULL) {
+				framesDone++;
+				break;
+			}
+			
+					
 			if (strcmp(frames_string[currentFrame], bookmarks[currentBookmark][0]) == 0) {
 				
 				button = gtk_button_new_with_label(bookmarks[currentBookmark][1]);
@@ -87,7 +100,13 @@ int main(int argc, char *argv[]) {
 				gtk_widget_show(button);
 				
 			}
+			
 		}
+		
+		if (framesDone)
+			break;
+		
+		
 		
 		gtk_container_add(GTK_CONTAINER (frame[currentFrame]), sectionBox);
 		gtk_widget_show(sectionBox);
