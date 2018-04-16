@@ -5,11 +5,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define NUM 54	// TODO Depreciate
-#define FRAMES 7
-
-#define MAX_BOOKMARKS 100
-#define MAX_FRAMES 100
+#define MAX_BOOKMARKS 10000
+#define MAX_FRAMES 10000
 
 // Settings for mainWindow //
 const gchar *mainWindow_title 			= "TheCaravan Bookmarks";
@@ -28,7 +25,7 @@ const gchar *mainLabel_fontWeight 		= "bold";
 GtkJustification mainLabel_justifyType 		= GTK_JUSTIFY_CENTER;
 
 // Settings for frames //
-const gchar *frames_string[FRAMES] 		= {"Outside World", "INET 4051", "INET 4083", "U of M", "2018", "Maps and Metro", "Miscellaneous"};
+const gchar *frames_string[MAX_FRAMES] 		= {"Outside World", "INET 4051", "INET 4083", "U of M", "2018", "Maps and Metro", "Miscellaneous"};
 gfloat frames_horizontalAlign			= 0.0;
 gfloat frames_verticalAlign			= 0.0;
 guint frames_padding				= 3;
@@ -97,4 +94,3 @@ char *linkToCommand[2][2] = {
 	/* 02 */	{"/usr/bin/gedit",		""}
 
 };
-
