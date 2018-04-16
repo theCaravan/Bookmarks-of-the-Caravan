@@ -24,13 +24,13 @@ Editing:
 
 Edit the file bookmarks-gtk.h. There are a lot of options to change so you can change font sizes.
 
-Before adding a bookmark, check the *frames_string[FRAMES], which holds sections.
+Before adding a bookmark, check the *frames_string[MAX_FRAMES], which holds sections.
 
 Once you have finished with that, add a bookmark by copying the following (do note that if you are adding a bookmark to the very end, remove the comma or else errors would apprear):
 
 {"", "", "/usr/bin/google-chrome", ""}, 
 
-The first string is the section name, which you choose from *frames_string[FRAMES]. Not choosing a section from this list would cause undefined behavior. 
+The first string is the section name, which you choose from *frames_string[MAX_FRAMES]. Not choosing a section from this list would cause undefined behavior. 
 
 The second string is the button label. 
 
