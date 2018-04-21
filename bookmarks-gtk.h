@@ -25,7 +25,7 @@ const gchar *mainLabel_fontWeight 		= "bold";
 GtkJustification mainLabel_justifyType 		= GTK_JUSTIFY_CENTER;
 
 // Settings for frames //
-const gchar *frames_string[MAX_FRAMES] 		= {"Outside World", "INET 4051", "INET 4083", "U of M", "2018", "Maps and Metro", "Miscellaneous"};
+const gchar *frames_string[MAX_FRAMES] 		= {"Outside World", "U of M", "2018", "Maps and Metro", "Miscellaneous"};
 gfloat frames_horizontalAlign			= 0.0;
 gfloat frames_verticalAlign			= 0.0;
 guint frames_padding				= 3;
@@ -39,25 +39,15 @@ char *bookmarks[MAX_BOOKMARKS][4] = {
 	/* 02 */	{"Outside World",	"Personal Gmail", 		"/usr/bin/google-chrome",		"https://mail.google.com/mail/u/0/"},
 	/* 03 */	{"Outside World",	"U of M Gmail", 		"/usr/bin/google-chrome",		"https://mail.google.com/mail/u/1/"},
 	/* 04 */	{"Outside World",	"Google Hangouts", 		"/usr/bin/google-chrome",		"https://hangouts.google.com/"},
-	/* 05 */	{"Outside World",	"Work Income",			"/usr/bin/google-chrome",		"https://1drv.ms/x/s!Ar23fzKhY4HqiMEe3V9OpYJCWVz0Mw"},
 	/* 06 */	{"Outside World",	"Amazon Cart",			"/usr/bin/google-chrome",		"https://www.amazon.com/gp/cart/view.html/ref=nav_cart"},
 	/* 07 */	{"Outside World",	"LinkedIn", 			"/usr/bin/google-chrome",		"http://www.linkedin.com"},
 	/* 08 */	{"Outside World",	"OneDrive", 			"/usr/bin/google-chrome",		"onedrive.live.com"},
-	/* 09 */	{"Outside World",	"Personal Google Drive", 	"/usr/bin/google-chrome",		"https://drive.google.com/drive/u/0/"},
-	/* 10 */	{"Outside World",	"UMN Google Drive", 		"/usr/bin/google-chrome",		"https://drive.google.com/drive/u/1/"},
-	/* 11 */	{"Outside World",	"Personal Google Calendar",	"/usr/bin/google-chrome",		"https://calendar.google.com/calendar/render?tab=mc#main_7"},
-	/* 12 */	{"Outside World",	"U of M Google Calendar",	"/usr/bin/google-chrome",		"https://calendar.google.com/calendar/b/1/render?tab=mc#main_7"},
+	/* 09 */	{"Outside World",	"Google Drive", 	"/usr/bin/google-chrome",		"https://drive.google.com/"},
 	/* 13 */	{"Outside World",	"Feedly",			"/usr/bin/google-chrome",		"http://feedly.com/i/latest"},
 	/* 14 */	{"Outside World",	"Pocket",			"/usr/bin/google-chrome",		"https://getpocket.com/a/queue/"},
 	/* 15 */	{"Outside World",	"YouTube",			"/usr/bin/google-chrome",		"https://www.youtube.com/"},
 	/* 16 */	{"Outside World",	"Netflix",			"/usr/bin/google-chrome",		"https://www.netflix.com/"},
 	/* 17 */	{"Outside World",	"Hulu",				"/usr/bin/google-chrome",		"https://www.hulu.com/"},
-	/* 18 */	{"INET 4051",		"Canvas",			"/usr/bin/google-chrome",		"https://canvas.umn.edu/courses/33650"},
-	/* 19 */	{"INET 4051",		"Canvas Grades",		"/usr/bin/google-chrome",		"https://canvas.umn.edu/courses/33650/grades"},
-	/* 20 */	{"INET 4051",		"Excel Grades",			"/usr/bin/google-chrome",		"https://1drv.ms/x/s!Ar23fzKhY4HqiM8F9OGkU2jbMvCwRA"},
-	/* 21 */	{"INET 4083",		"Canvas",			"/usr/bin/google-chrome",		"https://canvas.umn.edu/courses/49133"},
-	/* 22 */	{"INET 4083",		"Canvas Grades",		"/usr/bin/google-chrome",		"https://canvas.umn.edu/courses/49133/grades"},
-	/* 23 */	{"INET 4083",		"Excel Grades",			"/usr/bin/google-chrome",		"https://1drv.ms/x/s!Ar23fzKhY4HqiM8E96wtq6EPrS-LhA"},
 	/* 24 */	{"U of M",		"Canvas Home",			"/usr/bin/google-chrome",		"canvas.umn.edu"},
 	/* 25 */	{"U of M",		"MyU",				"/usr/bin/google-chrome",		"myu.umn.edu"},
 	/* 26 */	{"U of M",		"Classroom Search",		"/usr/bin/google-chrome",		"http://www.classroom.umn.edu/roomsearch/"},
@@ -79,8 +69,6 @@ char *bookmarks[MAX_BOOKMARKS][4] = {
 	/* 45 */	{"Maps and Metro",	"Bus 2 Eastbound - Anderson",	"/usr/bin/google-chrome",		"https://www.metrotransit.org/NexTripBadge.aspx?route=2&direction=2&stop=ANHA"},
 	/* 46 */	{"Miscellaneous",	"OneDrive Home",		"/usr/bin/google-chrome",		"onedrive.live.com"},
 	/* 47 */	{"Miscellaneous",	"Google Keep",			"/usr/bin/google-chrome",		"https://keep.google.com/u/0/"},
-	/* 48 */	{"Miscellaneous",	"Money Excel",			"/usr/bin/google-chrome",		"https://1drv.ms/x/s!Ar23fzKhY4HqhfI4sZN3ze1FJtCD3w"},
-	/* 49 */	{"Miscellaneous",	"Transcript Excel",		"/usr/bin/google-chrome",		"https://1drv.ms/x/s!Ar23fzKhY4HqhJoE5xkl57-ldvHPqw"},
 	/* 50 */	{"Miscellaneous",	"Al-Amal School",		"/usr/bin/google-chrome",		"http://www.al-amal.org/"},
 	/* 51 */	{"Miscellaneous",	"DistroWatch",			"/usr/bin/google-chrome",		"http://distrowatch.com/"},
 	/* 52 */	{"Miscellaneous",	"MyBoynton",			"/usr/bin/google-chrome",		"https://myboynton.bhs.umn.edu/home.aspx"},
